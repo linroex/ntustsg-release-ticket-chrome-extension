@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery.js"></script>
+    <script src="popup.js"></script>
+    <style>
+
+        
+        .panel{
+            margin:0px;
+        }
+        body{
+            width:300px;
+
+        }
+        #result{
+            margin-top:15px;
+            height:150px;
+            font-size:60px;
+            text-align:center;
+        }
+        #stuid{
+            width:75%;
+    
+        }
+        .result-id{
+            font-size:20px;
+            text-align: center;
+
+        }
+        .notice{
+            font-size:15px;
+            line-height:115px;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <div class="panel-heading">
+            雲門2票務小助手
+        </div>
+        <div class="panel-body">
+            <form class="form form-inline">
+                <input type="text" id="stuid" placeholder="請輸入學號">
+                <a id="submit" class="pull-right btn btn-sm btn-primary">查詢</a>
+                <div id="result" class="alert alert-success">
+
+                </div>
+                
+
+                <a id="reset" class="btn btn-danger btn-block">清除記錄</a>
+                <br>
+                <input type="password" id="passwd" class="form-control" style="display:none">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

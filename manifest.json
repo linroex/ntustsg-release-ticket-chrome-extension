@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "雲門2票務小助手",
+  "description": "幫助學生會進行雲門2活動發放門票工作，可以辨認指定學號是否領取過門票",
+  "version": "0.1",
+
+  "permissions": [
+    "storage",
+    "contextMenus"
+  ],
+  "browser_action": {
+    "default_icon": "tickets-icon.png",
+    "default_popup": "popup.html"
+  }
+}
