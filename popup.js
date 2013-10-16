@@ -1,7 +1,10 @@
 $(document).ready(function(){
     var reset_switcher = 0;
-    $('#submit').click(function(){
-        search();
+    
+    $('#stuid').keypress(function(){
+        if($('#stuid').val().length == 9){
+            search();
+        }
     });
     $('#reset').click(function(){
         
