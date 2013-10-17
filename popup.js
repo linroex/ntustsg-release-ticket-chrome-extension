@@ -1,10 +1,16 @@
 $(document).ready(function(){
     var reset_switcher = 0;
     
-    $('#stuid').keypress(function(){
-        if($('#stuid').val().length == 9){
-            search();
+    $('#stuid').keypress(function(e){
+        if(e.keyCode == 13){
+            if($('#stuid').val().length == 10){
+                search();
+            }else{
+                $('#stuid').val('');
+                $('#result').html('<span style="font-size:35px">請輸入悠遊卡內碼</span>');
+            }
         }
+        
     });
     $('#reset').click(function(){
         
@@ -34,7 +40,7 @@ function search(){
             var stuid = e['stuid-ed'];    
         }
         if($('#stuid').val()==''){
-            $('#result').html('<span style="font-size:35px">請輸入學號</span>');
+            $('#result').html('<span style="font-size:35px">請輸入悠遊卡內碼</span>');
         }else if(stuid.indexOf($('#stuid').val().toLowerCase())!=-1){
             $('#result').html('<div class="result-id">' + $('#stuid').val().toUpperCase() + '</div>已領票');
         }else{
