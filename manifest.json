@@ -3,11 +3,12 @@
 
   "name": "學生會票務小助手",
   "description": "幫助學生會進行活動發放門票工作，可以辨認指定學生證是否領取過門票",
-  "version": "0.3",
+  "version": "0.4",
 
   "permissions": [
     "storage",
-    "contextMenus"
+    "contextMenus",
+    "http://ntustsg.com/*"
   ],
   "browser_action": {
     "default_icon": "tickets-icon.png",
